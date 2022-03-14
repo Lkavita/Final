@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%- include('_partials/meta') %>
+	<title>Dojo Toolkit</title>
+</head>
+<body class="home">
+	<%- include('_partials/header') %>
+	<main>
+		<%- include('_partials/banner') %>
+		<section class="heading">
+			<div class="text-center">
+				<div class="row">
+					<div class="small-centered medium-10 large-10 columns">
+						<h1>Dojo Toolkit <%= dojo.ver.major %></h1>
+						<p class="tagline">A JavaScript toolkit that saves you time and scales with your development process. Provides everything you need to build a Web app. Language utilities, UI components, and more, all in one place, designed to work together perfectly.</p>
+						<a href="<%= url.download %>"><span class="button">Get Dojo</span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="trusted">
+			<div class="row">
+				<h2 class="sectionTitle">Trusted by</h2>
+				<div class="constrain">
+					<span class="company-cisco"></span>
+					<span class="company-jpmorgan"></span>
+					<span class="company-esri"></span>
+					<span class="company-intuit"></span>
+					<span class="company-adp"></span>
+
+					<span class="company-fanniemae"></span>
+					<span class="company-marriott"></span>
+					<span class="company-vmware"></span>
+					<span class="company-philips"></span>
+					<span class="company-ibm"></span>
+					<span class="company-mathworks"></span>
+					<span class="company-pearson"></span>
+				</div>
+			</div>
+		</section>
+		<section class="use">
+			<div class="row">
+				<div class="constrain">
+					<%- include('_partials/ui/docsLeadin', {title:'Use Dojo'}) %>
+				</div>
+			</div>
+		</section>
+
+		<section class="support">
+			<div class="row">
+				<h2 class="sectionTitle" id="support">Help &amp; Support</h2>
+				<%- include('_partials/ui/helpSupport') %>
+			</div>
+		</section>
+		<section class="join">
+			<div class="row">
+				<div class="small-12 small-centered columns">
+					<%- include('_partials/ui/contributorButton') %>
+					<%- include('_partials/ui/social') %>
+				</div>
+			</div>
+		</section>
+
+		<%- include('_partials/footer') %>
+	</main>
+</body>
+</html>
